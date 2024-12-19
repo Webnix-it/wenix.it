@@ -1,0 +1,262 @@
+/* Stile per il corpo della pagina */
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  
+  /* Stile per la barra di navigazione */
+  #bottoneindietro {
+    color: white;
+    padding: 10px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s; /* Aggiunto per una transizione più fluida */
+    height: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+    right: 150px;
+      position: relative;
+  }
+  
+  #bottoneindietro:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  #bottoneindietro:hover #iconamenu {
+    color: rgb(0, 0, 0); /* Cambia il colore dell'icona al passaggio del mouse */
+  }
+  
+  #iconamenu {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  
+  #bord{
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    width: 400px;
+    margin-top: 100px; /* Aumentato il margine superiore per dare spazio al bottone Indietro */
+  }
+  
+  #testo1 ,#testo2 {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+  }
+  
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+  }
+  
+  #bottone {
+    margin-top: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+  }
+  
+  
+  
+  
+
+  
+  
+  #icon {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  
+  #testo {
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 3px 5px;
+    border: none;
+    width: 300px;
+    height: 150px;
+    margin: 8px;
+  }
+  
+
+
+ #elenco {
+    text-align: left;
+    color: white;
+}
+
+
+  
+/* Media queries per dispositivi mobili */
+@media (max-width: 767px) {
+  #bord {
+    margin-top: 40px;
+    width: 300px;
+}
+
+#bottoneindietro {
+
+  margin-left: 80px;
+}
+}
+
+
+
+
+
+
+  
+  #line {
+    margin-top: 20px;
+    width: 100px;
+  }
+  
+
+  
+
+  #iconainsta {
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  #iconainsta:hover {
+    transform: scale(1.1); /* Aggiunge l'effetto zoom */
+    transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+  }
+  
+
+  #logo {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  
+  .faq-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.faq-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    background-color: #2c2c2c;
+    box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+}
+
+.faq-item:hover {
+    background-color: rgb(34, 58, 104);
+}
+
+.faq-question {
+    font-size: 1.2em;
+    margin: 0;
+    color: white;
+    cursor: pointer;  /* Aggiungi un cursore per far capire che è cliccabile */
+    font-weight: bold;  /* Rendi la domanda più visibile */
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+#minititolo{
+    font-weight: bold;
+}
+
+
+
+.faq-answer-container {
+  display: none;  /* Nascondi il contenuto della risposta */
+  padding-left: 20px;
+}
+
+
+.faq-item.active .faq-answer-container {
+  display: block;  /* Mostra il contenuto quando .faq-item ha la classe active */
+}
+
+
+
+#iconacredit1{
+  padding-left: 5px;
+  margin-top: 10px;
+  height: 30px;
+  background-color: white;
+  border-radius: 4px;
+  padding-right: 5px;
+  margin-left: 5px;
+
+}
+
+
+#logo {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#conticonr {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  margin: 10px 0; /* Aggiungi margine superiore e inferiore se necessario */
+}
+
+#conticonr img {
+  margin: 0 10px; /* Spaziatura tra le immagini */
+}
+
+

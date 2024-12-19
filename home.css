@@ -1,0 +1,159 @@
+/* Stile per il corpo della pagina */
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+
+#bord{
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  width: 400px;
+  margin-top: 100px; /* Aumentato il margine superiore per dare spazio al bottone Indietro */
+}
+
+#testo1 ,#testo2 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+}
+
+
+
+
+#form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+}
+
+#bordo1 {
+  margin-top: 40px;
+}
+
+#icon {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+#iconig {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+
+
+#bottone, #bottone1, #bottone2 {
+  margin-top: 20px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  height: 70px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+  transition: 1s;
+}
+
+
+
+#bottone:hover {
+  background-color: rgb(23, 79, 184);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1); /* Aggiunge l'effetto zoom */
+  transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+}
+
+#bottone1:hover {
+  background-color: #0da163;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1); /* Aggiunge l'effetto zoom */
+  transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+}
+
+
+#bottone2:hover {
+  background-color:  #000000;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1); /* Aggiunge l'effetto zoom */
+  transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+}
+
+
+#line {
+width: 80px;
+margin-top: 20px;
+}
+
+
+#testo {
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 3px 5px;
+  border: none;
+  width: 300px;
+  height: 150px;
+  margin: 8px;
+}
+
+#spazio {
+  width: 80px;
+  margin-top: 20px;
+  }
+
+  #iconainsta {
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  #iconainsta:hover {
+    transform: scale(1.1); /* Aggiunge l'effetto zoom */
+    transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+  }
+  
+
+  #logo {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 767px) {
+  #bord {
+    margin-top: 40px;
+    width: 300px;
+}
+}
+
+
+
+

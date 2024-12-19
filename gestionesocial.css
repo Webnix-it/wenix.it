@@ -1,0 +1,178 @@
+/* Stile per il corpo della pagina */
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Stile per la barra di navigazione */
+#bottoneindietro {
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+  border: none;
+  cursor: pointer;
+  transition-duration: 0ms;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  height: 60px;
+  z-index: 10; /* Aggiungi un livello di z-index per essere sicuro che non venga sovrapposto da altri elementi */
+}
+
+
+
+#bottoneindietro:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+#bord{
+  border: 2px solid #F8F400;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 100px; /* Aumentato il margine superiore per dare spazio al bottone Indietro */
+}
+
+#testo1 ,#testo2 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+}
+
+#testo3 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-size: large;
+
+}
+
+#testo4 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-size: small;
+  margin-top: 10px;
+}
+
+
+
+#form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+}
+
+#bordo1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+  padding: 10px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+
+#icon {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+#iconig {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+#invia {
+  width: 200px;
+  height: 70px;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition-duration: 1s;
+  border-radius: 8px;
+  border: white;
+  font-weight: bold;
+}
+
+
+#invia:hover {
+  background-color: rgb(23, 184, 50);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1); /* Aggiunge l'effetto zoom */
+  transition: transform 0.3s ease; /* Rende l'animazione più fluida */
+}
+
+
+#line {
+width: 80px;
+margin-top: 20px;
+}
+
+#dati {
+  outline: none;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 3px 5px rgb(0 0 0 / 8%);
+  border: none;
+  width: 260px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: sans-serif;
+  height: 30px;
+  margin: 8px;
+}
+
+#testo {
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 3px 5px;
+  border: none;
+  width: 300px;
+  height: 150px;
+  margin: 8px;
+}
+
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 767px) {
+  #bord {
+  margin-top: 100px;
+  width: 300px;
+  }
+}
+
+
+

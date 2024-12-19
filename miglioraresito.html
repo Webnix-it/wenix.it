@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migliora il tuo Sito Web</title>
+    <link rel="stylesheet" href="miglioraresito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="menu">
+        <button id="bottoneindietro" onclick="location.href='sitoweb.html'">
+            <span id="iconamenu" class="material-symbols-outlined">arrow_back</span>Indietro
+        </button>
+        <button id="bottoneindietro" onclick="location.href='index.html'">
+            <span id="iconamenu" class="material-symbols-outlined">home</span>Home
+        </button>
+    </div>
+
+    <div id="bord">
+        <h1 id="testo1">Rinnova il Tuo Sito Web</h1>
+        <p id="testo2">Miglioriamo l'aspetto e le funzionalità del tuo sito web per massimizzare l'impatto e l'efficienza</p>
+    </div>
+
+    <div id="bordo1">
+        <h1 id="testo3">Compila il modulo ⬇️</h1>
+        <p id="testo4">Richiedi un preventivo</p>
+
+        <form id="form">
+            <!-- Step 1 -->
+            <div id="step1">
+                <label id="iconalab">
+                    <p id="domandaditesto">Nome e cognome?</p>
+                    <span id="icon" class="material-symbols-outlined">how_to_reg</span>
+                    <input id="dati" type="text" name="from_name" placeholder="Nome e Cognome" required autocomplete="name"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(1)">Conferma</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="step2" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Sei a conoscenza che le spese per la gestione dell'hosting e del dominio non sono incluse nel nostro servizio?</p>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(2)">Sì, confermo di aver letto</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="step3" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Inserisci la tua E-mail</p>
+                    <span id="icon" class="material-symbols-outlined">mail</span>
+                    <input id="dati" type="email" name="reply_to_email" placeholder="E-mail" required autocomplete="email"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(3)">Conferma</button>
+            </div>
+
+            <!-- Step 4 -->
+            <div id="step4" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Inserisci l'URL del tuo sito web</p>
+                    <span id="icon" class="material-symbols-outlined">language</span>
+                    <input id="dati" type="url" name="website" placeholder="URL del sito web" required autocomplete="url"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(4)">Conferma</button>
+            </div>
+
+            <!-- Step 5 -->
+            <div id="step5" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Qual è il nome della tua azienda o attività?</p>
+                    <span id="icon" class="material-symbols-outlined">help</span>
+                    <input id="dati" type="text" name="business_name" placeholder="Nome azienda" required autocomplete="off"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(5)">Conferma</button>
+            </div>
+
+            <!-- Step 6 -->
+            <div id="step6" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Qual è l'obiettivo principale del sito web?</p>
+                    <span id="icon" class="material-symbols-outlined">style</span>
+                    <input id="dati" type="text" name="logo_style" placeholder="Vendere prodotti, generare contatti, informare..." required autocomplete="off"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(6)">Conferma</button>
+            </div>
+
+            <!-- Step 7 -->
+            <div id="step7" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Ci sono siti web che ti piacciono particolarmente?</p>
+                    <span id="icon" class="material-symbols-outlined">face</span>
+                    <input id="dati" type="text" name="inspiration" placeholder="Se sì, quali e perché?" required autocomplete="off"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(7)">Conferma</button>
+            </div>
+
+            <!-- Step 8 -->
+            <div id="step8" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Quali tipi di contenuti vuoi includere?</p>
+                    <span id="icon" class="material-symbols-outlined">diamond</span>
+                    <input id="dati" type="text" name="values" placeholder="(es. testi, immagini, video)" required autocomplete="off"/>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(8)">Conferma</button>
+            </div>
+
+            <!-- Step 9 -->
+            <div id="step9" style="display: none;">
+                <label id="iconalab">
+                    <p id="domandaditesto">Ci sono altre considerazioni o richieste particolari che dovrei conoscere?</p>
+                    <span id="icon" class="material-symbols-outlined">comment</span>
+                    <textarea name="comments" id="testo" placeholder="Commenti e richieste" required></textarea>
+                </label>
+                <button type="button" id="btnconferma" onclick="nextStep(9)">Conferma</button>
+            </div>
+        </form>
+
+        <!-- Riepilogo delle risposte -->
+        <div id="summary" style="display: none;">
+            <h2 id="testo1">Riepilogo delle risposte</h2>
+            <div id="summaryContent"></div>
+            <hr id="line"/>
+            <div id="bottoni">
+                <button id="btnmodifica" onclick="editResponses()">Modifica Risposte</button>
+                <input id="invia" type="submit" value="Invia" onclick="submitForm()"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the external JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="miglioraresito.js"></script>
+</body>
+</html>

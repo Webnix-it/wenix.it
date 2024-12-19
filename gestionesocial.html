@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Social</title>
+    <link rel="stylesheet" href="gestionesocial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <!-- Barra di navigazione -->
+    <div class="menu" >
+        <button id="bottoneindietro" onclick="location.href='index.html'">
+            <span id="icon" class="material-symbols-outlined">arrow_back</span>Indietro</button>
+    </div>
+
+
+
+
+    <!-- Sezione introduttiva -->
+    <div id="bord">
+        <h1 id="testo1">Potenzia la Tua Attività con i Social</h1>
+        <p id="testo2">Amplifica la Presenza del Tuo Business sui Social</p>
+    </div>
+
+<div id="bordo1">
+
+    <!-- Sezione del modulo -->
+    <h1 id="testo3">Compila il modulo ⬇️</h1>
+    <p id="testo4">Richiedi un preventivo</p>
+
+    <form id="form">
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">how_to_reg</span>
+            <input id="dati" type="text" name="from_name" placeholder="Nome e Cognome" required autocomplete="name"/>
+        </label>
+
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">mail</span>
+            <input id="dati" type="email" name="reply_to_email" placeholder="E-mail" required autocomplete="email"/>
+        </label>
+
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">badge</span>
+            <select name="scelta" id="dati" required>
+                <option value="" disabled selected>Scegli la categoria</option>
+                <option value="Migliorare l'aspetto dei miei social">Migliorare l'aspetto dei miei social</option>
+                <option value="Gestione dei social, creazione dei post">Gestione dei social, creazione dei post</option> 
+            </select>
+        </label>
+
+        <label id="iconalab">
+            <span id="iconig" class="fab fa-instagram fa-2x"></span>
+            <input id="dati" type="url" name="instagram_username" placeholder="@nome utente instagram" required autocomplete="username"/>
+        </label>
+
+        <label id="iconalab">
+            <span id="iconig" class="fab fa-facebook fa-2x"></span>
+            <input id="dati" type="url" name="facebook_link" placeholder="Link Pagina Facebook" required autocomplete="url"/>
+        </label>
+
+        <textarea id="testo" placeholder="Inserisci qui le tue idee... Raccontaci della tua Attività...e di cosa vorresti Migliorare..(logo, branding, ecc): "></textarea>
+        <hr id="line"/>
+        <input id="invia" type="submit" value="Invia"/>
+    </form>
+
+
+</div>
+
+
+    <!-- Include the external JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="gestionesocial.js"></script>
+
+</body>
+</html>

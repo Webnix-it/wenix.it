@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migliora il tuo Sito Web</title>
+    <link rel="stylesheet" href="asistenza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <!-- Barra di navigazione -->
+    <div class="menu" >
+        <button id="bottoneindietro" onclick="location.href='index.html'">
+            <span id="iconamenu" class="material-symbols-outlined">arrow_back</span>Indietro</button>
+   </div>
+
+ 
+    <!-- Sezione introduttiva -->
+    <div id="bord">
+        <h1 id="testo1">Supporto & Assistenza</h1>
+        <p id="testo2">Soluzioni su misura per ogni attività</p>
+    </div>
+
+<div id="bordo1">
+
+    <!-- Sezione del modulo -->
+    <h1 id="testo3">Compila il modulo ⬇️</h1>
+    <p id="testo4"></p>
+
+
+
+
+
+    <form id="form">
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">badge</span>
+            <input id="dati" type="text" name="from_name" placeholder="Nome e Cognome" required autocomplete="name"/>
+        </label>
+    
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">mail</span>
+            <input id="dati" type="email" name="reply_to_email" placeholder="E-mail" required autocomplete="email"/>
+        </label>
+    
+        <label id="iconalab">
+            <span id="icon" class="material-symbols-outlined">badge</span>
+            <select name="scelta" id="dati" required>
+                <option value="" disabled selected>Scegli la categoria</option>
+                <option value="Supporto & Assistenza">Supporto & Assistenza</option>
+                <option value="Modifiche Progetto">Modifiche Progetto</option>
+                <option value="Voglio il rimborso">Voglio il rimborso</option>
+                <option value="Tempi di Consegna">Tempi di Consegna</option>
+                <option value="Copywriting">Copywriting</option>
+                <option value="Design Logo">Design Logo</option>
+                <option value="Soddisfazione del Cliente">Soddisfazione del Cliente</option>
+                <option value="Problemi Tecnici">Problemi Tecnici</option>
+                <option value="Altre Richieste">Altre Richieste</option>
+            </select>
+        </label>
+    
+        <textarea id="testo" name="message" placeholder="Spiega come possiamo aiutarti..;" required></textarea>
+        <hr id="line"/>
+        <input id="invia" type="submit" value="Invia"/>
+    </form>
+    
+
+
+    
+</div>
+
+
+    <!-- Include the external JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="asistenza.js"></script>
+
+</body>
+</html>
